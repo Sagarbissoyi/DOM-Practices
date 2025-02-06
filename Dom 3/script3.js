@@ -7,11 +7,15 @@
 let parentDiv=document.getElementById("parent");
 console.log("parent",parentDiv)
 
+
+
+// .innerHTML means it will replace the content of the div
 parentDiv.innerHTML=parentDiv.innerHTML + "<h3>bye bye sagar</h3>"
 
 
-
+// .innerText means it will replace the content of the div
 console.log("innerText", parentDiv.innerText);
+//.textContent means it will replace the content of the div
 console.log("innerContent", parentDiv.textContent)
 
 
@@ -51,6 +55,9 @@ elem.style.border="20px solid black"
 //elem.style.cssText="background-color:blue; color:white; padding:10px; margin:10px; border-radius:10px; border:20px solid black;"
 
 console.log(elem);
+
+
+// .appendChild will append the element to the body
 body.appendChild(elem);
 
 
@@ -58,55 +65,8 @@ body.appendChild(elem);
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-let bt = document.getElementById("btn")
-bt.addEventListener("click", function(){
-    body.innerHTML += "<div> Hii this is appended</div>"
-    console.log(bt)
-})
+// let bt = document.getElementById("btn")
+// bt.addEventListener("click", function(){
+//     body.innerHTML += "<div> Hii this is appended</div>"
+//     console.log(bt)
+// })

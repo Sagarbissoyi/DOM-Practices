@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>A Lovely Link</h1>
+    <a href="https://www.cricbuzz.com/">Live Score</a>
+    <p id="para"></p>
+<script>
+    let aTags = document.getElementsByTagName('a')[0];
+let para=document.getElementById('para');
+
+    let LinkOfTags= aTags.href;
+
+aTags.addEventListener('click',customLink);
+
+function customLink(eventDetails){
+    eventDetails.preventDefault();//preventDefault means is default action of the event will not be triggered.
+    para.innerText='You are going to visit: '+LinkOfTags;
+}
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>

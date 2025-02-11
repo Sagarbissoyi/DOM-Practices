@@ -37,38 +37,4 @@ let form_js1 = document.getElementsByTagName("form[name='search']"); // this wil
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+let form_js2 = document.getElementsByName("search"); // this will select the form with name search but this will not work on getElementsByName because it returns a collection of all elements in the document with the specified name, as a NodeList object.

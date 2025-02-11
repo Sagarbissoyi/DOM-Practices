@@ -11,10 +11,7 @@
 
 
 
-
 /////////////////////NOTE END//////////////////////
-
-
 
 
 
@@ -22,13 +19,7 @@
 // /////////////////////////////////////Dom Traversal/////////////////////////////////////
 
 
-
-
-
 // //////////////////////////////////////1st Method//////////////////////////////////////
-
-
-
 
 
 
@@ -49,9 +40,6 @@ console.log(child1Div.nextElementSibling.nextElementSibling)
 
 
 
-
-
-
 ///////////////////////////////////////////////////////////////
 
 
@@ -60,11 +48,8 @@ console.log(child1Div.nextElementSibling.nextElementSibling)
 
 
 
-
 let parentDiv1=document.getElementById("parent");
 console.log(parentDiv1.firstElementChild)
-
-
 
 
 
@@ -74,8 +59,6 @@ console.log(parentDiv1.firstElementChild)
 
 
 /////// //////////////// How to select different elements in DOM////////////////////////////
-
-
 
 
 
@@ -90,13 +73,7 @@ console.log(element1);
 
 
 
-
-
-
 //////////////////////////////How to select multiple elements in DOM////////////////////////////
-
-
-
 
 
 
@@ -109,21 +86,12 @@ let element3 = document.querySelectorAll("#child2.child1");
 console.log(element3);
 
 
-
-
-
-
 //////////////////////////////////
-
-
 
 
 
 let elem1=document.getElementsByClassName("child1");
 console.log(elem1)
-
-
-
 
 
 
@@ -134,7 +102,4 @@ console.log(elem1)
 
 let emem2=document.getElementsByTagName("div");
 console.log(emem2)
-
-
-
 

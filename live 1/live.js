@@ -3,9 +3,12 @@
 //  document means complete html page
 
 // .querySelector() - returns the first element that matches a specified CSS selector(s) in the document.
+//.querySelectorAll() - returns all elements that match a specified CSS selector(s) in the document.
 
 // .getElementById() - returns an Element object representing the element whose id property matches the specified string.
-
+//.getElementsByClassName() - returns a collection of all elements in the document with the specified class name, as a NodeList object.
+//.getElementsByTagName() - returns a collection of all elements in the document with the specified tag name, as a NodeList object.
+//.getElementsByName() - returns a collection of all elements in the document with the specified name, as a NodeList object.
 
 
 

@@ -60,12 +60,6 @@ scoreArea.innerHTML=`<h3>User: ${userScore}  </h3>  <h3>Computer: ${ComputerScor
 
 
 
-
-
-
-
-
-
 // how to stylee like css in the js
 
 

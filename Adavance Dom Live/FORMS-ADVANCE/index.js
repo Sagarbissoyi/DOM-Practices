@@ -76,6 +76,14 @@ function validateForm(eventDeatils){
     <p>Password: ${password}</p>
     `
 
+//reset my form
+
+name_box.value="";
+email_box.value="";
+password_box.value="";
+confirm_password_box.value="";
+
+
 }
   
 

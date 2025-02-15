@@ -5,7 +5,7 @@ const email_box= document.getElementById('email');
 const password_box=document.getElementById('password');
 const confirm_password_box=document.getElementById('confirm_password');
 const submit_button=document.getElementById('submit');
-const output=document.getElementById('output');
+const output=document.querySelector('.output');
 const message = document.querySelector('.message');
 
 const form = document.querySelector('form');
@@ -67,14 +67,33 @@ function validateForm(eventDeatils){
     }
   message.innerHTML='Registration Success';
     message.className="success";
-////DISPLAY////
-    output.innerHTML=`
 
-    <h2> Registration Details</h2>
-    <p>Name: ${name}</p>
-    <p>Email: ${email}</p>
-    <p>Password: ${password}</p>
-    `
+    
+////DISPLAY////
+    // output.innerHTML= output.innerHTML + `
+
+    // <h2> Registration Details</h2>
+    // <p>Name: ${name}</p>
+    // <p>Email: ${email}</p>
+    
+    // `
+
+
+let heading1 = document.createElement('h1');
+heading1.innerText = "Hello world 1"
+   
+    //   output.append(heading1) ///it will show first element
+      output.prepend((heading1)) //// it will show second element first 
+
+
+let heading2 = document.createElement('h2');
+heading2.innerText = "Hello world 2"
+
+output.append(heading2)
+
+
+
+
 
 //reset my form
 
@@ -83,6 +102,8 @@ email_box.value="";
 password_box.value="";
 confirm_password_box.value="";
 
+
+// 
 
 }
   

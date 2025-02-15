@@ -5,7 +5,7 @@ const email_box= document.getElementById('email');
 const password_box=document.getElementById('password');
 const confirm_password_box=document.getElementById('confirm_password');
 const submit_button=document.getElementById('submit');
-const output=document.querySelector('.output');
+const output=document.getElementById('output');
 const message = document.querySelector('.message');
 
 const form = document.querySelector('form');
@@ -13,6 +13,8 @@ const form = document.querySelector('form');
 //submit_button.addEventListener('click',validateForm)
 
 form.addEventListener("submit",validateForm)/////////////////new features of form
+
+let userCount=0
 
 function validateForm(eventDeatils){
 
@@ -79,21 +81,28 @@ function validateForm(eventDeatils){
     // `
 
 
-let heading1 = document.createElement('h1');
-heading1.innerText = "Hello world 1"
+// let heading1 = document.createElement('h1');
+// heading1.innerText = "Hello world 1"
    
-    //   output.append(heading1) ///it will show first element
-      output.prepend((heading1)) //// it will show second element first 
+//     //   output.append(heading1) ///it will show first element
+//       output.prepend((heading1)) //// it will show second element first 
 
 
-let heading2 = document.createElement('h2');
-heading2.innerText = "Hello world 2"
+// let heading2 = document.createElement('h2');
+// heading2.innerText = "Hello world 2"
 
-output.append(heading2)
+// output.prepend(heading2)
 
+let userDetails= document.createElement('div');
+userDetails.id=`user${++userCount}`
+userDetails .innerHTML = `
 
+<p>Name: ${name}</p>
+     <p>Email: ${email}</p>
 
+`
 
+output.append(userDetails)
 
 //reset my form
 

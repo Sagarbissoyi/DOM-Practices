@@ -111,11 +111,11 @@ email_box.value="";
 password_box.value="";
 confirm_password_box.value="";
 
+//   redirect to dispay.html
 
-// 
+window.location.href="./dispaly.html"
 
 }
-  
 
 
 // name_box.addEventListener("change",detectError)////its only work when its focouse out

@@ -14,8 +14,8 @@ const form = document.querySelector('form');
 
 form.addEventListener("submit",validateForm)/////////////////new features of form
 
-let userCount=0
-
+// let userCount=0
+let userArray=[]
 function validateForm(eventDeatils){
 
     eventDeatils.preventDefault();
@@ -93,16 +93,28 @@ function validateForm(eventDeatils){
 
 // output.prepend(heading2)
 
-let userDetails= document.createElement('div');
-userDetails.id=`user${++userCount}`
-userDetails .innerHTML = `
+// let userDetails= document.createElement('div');
+// userDetails.id=`user${++userCount}`
+// userDetails .innerHTML = `
 
-<p>Name: ${name}</p>
-     <p>Email: ${email}</p>
+// <p>Name: ${name}</p>
+//      <p>Email: ${email}</p>
 
-`
+// `
 
-output.append(userDetails)
+// output.append(userDetails)
+
+
+userArray.push({
+    name,email
+})
+
+console.log(userArray)
+
+
+
+
+
 
 //reset my form
 

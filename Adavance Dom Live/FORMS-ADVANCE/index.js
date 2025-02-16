@@ -15,7 +15,16 @@ const form = document.querySelector('form');
 form.addEventListener("submit",validateForm)/////////////////new features of form
 
 // let userCount=0
-let userArray=[]
+
+let usersJson = localStorage.getItem("user")
+ console.log(usersJson)
+
+userArray = JSON.parse(usersJson) || []   //shortcircut operator
+
+// let userArray=[]
+
+
+
 function validateForm(eventDeatils){
 
     eventDeatils.preventDefault();
@@ -110,8 +119,9 @@ userArray.push({
 })
 
 console.log(userArray)
-
-
+let userArrayJson = JSON.stringify(userArray)
+ localStorage.setItem("user",
+     userArrayJson)
 
 
 

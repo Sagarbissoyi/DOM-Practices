@@ -7,5 +7,32 @@
 </head>
 <body>
     <h1>USER DETAILS :</h1>
+<div class="output">
+
+</div>
+    <script>
+        let usersJson = localStorage.getItem('users');
+let output = document.querySelector('.output')
+
+if(usersJson == null){
+    let para =document.createElement('p');
+    para.innerText = "No users found"
+    document.body.append(para);
+}else{
+   let users = JSON.parse(usersJson);
+
+
+   for(let t of users){
+    let useDiv = document.createElement('div');
+    userDiv.innerHTML=`
+    <h2>${t.name}</h2>
+    <p>${t.email}</p>
+    `
+    output.append(userDiv);
+   }
+
+}
+
+    </script>
 </body>
 </html>

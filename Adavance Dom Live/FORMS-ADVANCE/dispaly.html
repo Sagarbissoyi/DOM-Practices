@@ -16,9 +16,10 @@ let output = document.querySelector('.output')
 
 if(usersJson == null){
     let para =document.createElement('p');
-    para.innerText = "No users found"
+    para.innerText = "No users found";
     document.body.append(para);
-}else{
+}
+else{
    let users = JSON.parse(usersJson);
 console.log(users)
 
